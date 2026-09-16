@@ -1,1 +1,4 @@
-console.log("Hello via Bun!");
+import test from "./databaseHandler";
+
+console.log("Hello bun!");
+test()
