@@ -1,1 +1,28 @@
 @import 'tailwindcss';
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+@theme 
+{
+  /* Dark theme */
+  --color-dark-primary: #9352CC;
+  --color-dark-background: #000000;
+  --color-dark-card-background: #240D36;
+  --color-dark-secondary: #360066;
+  --color-dark-text-primary: #F1EAFF;
+  --color-dark-text-secondary: #CFCBD9;
+  --color-dark-text-placeholder: #2C2C2C;
+  --color-dark-warn: #FFF051;
+  --color-dark-error: #FF3939;
+
+  /* Light theme */
+  --color-light-primary: #AB6EE0;
+  --color-light-background: #F2F2F2;
+  --color-light-card-background: #B68AD9;
+  --color-light-secondary: #C6BCCF;
+  --color-light-text-primary: #17141D;
+  --color-light-text-secondary: #262626;
+  --color-light-text-placeholder: #929292;
+  --color-light-warn: #DACA1F;
+  --color-light-error: #D40000;
+}
+
