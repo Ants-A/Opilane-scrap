@@ -1,1 +1,7 @@
 frontend/file-routes.d.ts
+**/node_modules/
+**/.runtime-tmp/
+frontend/dist/
+frontend/.vite/
+backend/data/
+test-results/

@@ -4,34 +4,36 @@
   "description": "",
   "type": "module",
   "scripts": {
-    "start": "vite",
-    "dev": "vite --host 0.0.0.0",
-    "build": "vite build",
-    "serve": "vite preview",
-    "test": "vitest",
-    "lint": "oxlint src"
+    "start": "bun ./node_modules/vite/bin/vite.js",
+    "dev": "bun ./node_modules/vite/bin/vite.js --host 0.0.0.0",
+    "build": "bun ./node_modules/vite/bin/vite.js build",
+    "serve": "bun ./node_modules/vite/bin/vite.js preview",
+    "test": "bun ./node_modules/vitest/vitest.mjs",
+    "lint": "bun ./node_modules/oxlint/bin/oxlint src",
+    "typecheck": "bun ./node_modules/typescript/bin/tsc --noEmit"
   },
   "license": "MIT",
   "devDependencies": {
-    "@solidjs/diagnostics": "^2.0.0-rc.6",
-    "@solidjs/start-devtools": "^1.0.0-next.4",
-    "@solidjs/testing-library": "^1.0.0-beta.3",
-    "@solidjs/vite-plugin": "^3.0.0-next.38",
+    "@solidjs/testing-library": "^0.8.10",
     "@tailwindcss/vite": "^4.1.13",
     "@testing-library/jest-dom": "^7.0.0",
     "eslint-plugin-solid": "~0.18.0",
-    "filesystem-routing": "0.2.1",
     "jsdom": "^25.0.1",
     "oxlint": "~1.79.0",
     "tailwindcss": "^4.1.13",
     "typescript": "^5.9.2",
     "vite": "^8.1.5",
-    "vitest": "^5.0.0"
+    "vitest": "^5.0.0",
+    "vite-plugin-solid": "^2.11.6",
+    "@types/node": "^22.0.0"
   },
   "dependencies": {
-    "@solidjs/meta": "^1.0.0-next.2",
-    "@solidjs/router": "^2.0.0-next.21",
-    "@solidjs/web": "^2.0.0-rc.6",
-    "solid-js": "^2.0.0-rc.6"
+    "@kobalte/core": "^0.13.11",
+    "@solidjs/meta": "^0.29.4",
+    "@solidjs/router": "^0.15.3",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^3.3.1",
+    "solid-js": "^1.9.9"
   }
 }

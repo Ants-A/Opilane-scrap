@@ -1,15 +1,4 @@
-import express, { Request, Response } from 'express'; 
-import { getSubjects } from './dbController';
+import { createApp } from './app';
 
-const app = express()
-const port = 8080
-
-
-app.get("/subjects", async (req: Request, res: Response) => {
-    const subjects = await getSubjects()
-    res.json(subjects);
-})
-
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
-})
+const port = Number(process.env.PORT || 8080);
+createApp().listen(port, () => console.log(`Feedback API listening on port ${port}`));
